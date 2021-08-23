@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AddBook_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="420" Width="840">
     <Grid>
+        <ListBox Margin="10,185,440,10"/>
+        <TextBox HorizontalAlignment="Left" Margin="81,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="81,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="81,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="81,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="81,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" Height="39"/>
+        <TextBlock HorizontalAlignment="Left" Margin="21,13,0,0" Text="Full Name " TextWrapping="Wrap" VerticalAlignment="Top" Width="55"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,36,0,0" Text="Phone # " TextWrapping="Wrap" VerticalAlignment="Top" Width="46"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,59,0,0" Text="Address" TextWrapping="Wrap" VerticalAlignment="Top" Width="46"/>
+        <TextBlock HorizontalAlignment="Left" Margin="5,84,0,0" Text="Organization" TextWrapping="Wrap" VerticalAlignment="Top" Width="76"/>
+        <TextBlock HorizontalAlignment="Left" Margin="41,105,0,0" Text="Notes" TextWrapping="Wrap" VerticalAlignment="Top" Width="35"/>
+        <Button Content="Add Contact" HorizontalAlignment="Left" Margin="320,153,0,0" VerticalAlignment="Top" Width="80"/>
+        <TextBox HorizontalAlignment="Left" Margin="440,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" Height="209"/>
+        <TextBlock HorizontalAlignment="Left" Margin="41,155,0,0" Text="Search" TextWrapping="Wrap" VerticalAlignment="Top" Width="37"/>
+        <Button Content="Search" HorizontalAlignment="Left" Margin="220,154,0,0" VerticalAlignment="Top" Width="80"/>
+
 
     </Grid>
 </Window>

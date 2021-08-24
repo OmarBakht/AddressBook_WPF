@@ -5,23 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AddBook_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="420" Width="840">
-    <Grid>
-        <ListBox Margin="10,185,440,10"/>
-        <TextBox HorizontalAlignment="Left" Margin="81,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="81,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="81,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="81,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="81,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" Height="39"/>
+        Title="PhoneBook" Height="250" Width="450">
+    <Grid x:Name="Search" Margin="0,0,0,0">
+        <TextBox x:Name="txtname" HorizontalAlignment="Left" Margin="81,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPhone" HorizontalAlignment="Left" Margin="81,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtAddress" HorizontalAlignment="Left" Margin="81,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" Height="39"/>
+        <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Margin="81,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
+        <TextBox x:Name="txtNotes" HorizontalAlignment="Left" Margin="81,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" Height="39"/>
         <TextBlock HorizontalAlignment="Left" Margin="21,13,0,0" Text="Full Name " TextWrapping="Wrap" VerticalAlignment="Top" Width="55"/>
         <TextBlock HorizontalAlignment="Left" Margin="30,36,0,0" Text="Phone # " TextWrapping="Wrap" VerticalAlignment="Top" Width="46"/>
         <TextBlock HorizontalAlignment="Left" Margin="30,59,0,0" Text="Address" TextWrapping="Wrap" VerticalAlignment="Top" Width="46"/>
-        <TextBlock HorizontalAlignment="Left" Margin="5,84,0,0" Text="Organization" TextWrapping="Wrap" VerticalAlignment="Top" Width="76"/>
-        <TextBlock HorizontalAlignment="Left" Margin="41,105,0,0" Text="Notes" TextWrapping="Wrap" VerticalAlignment="Top" Width="35"/>
-        <Button Content="Add Contact" HorizontalAlignment="Left" Margin="320,153,0,0" VerticalAlignment="Top" Width="80"/>
-        <TextBox HorizontalAlignment="Left" Margin="440,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" Height="209"/>
-        <TextBlock HorizontalAlignment="Left" Margin="41,155,0,0" Text="Search" TextWrapping="Wrap" VerticalAlignment="Top" Width="37"/>
-        <Button Content="Search" HorizontalAlignment="Left" Margin="220,154,0,0" VerticalAlignment="Top" Width="80"/>
+        <TextBlock HorizontalAlignment="Left" Margin="5,105,0,0" Text="Organization" TextWrapping="Wrap" VerticalAlignment="Top" Width="76"/>
+        <TextBlock HorizontalAlignment="Left" Margin="41,126,0,0" Text="Notes" TextWrapping="Wrap" VerticalAlignment="Top" Width="35"/>
+        <Button x:Name="btnAddContact" Content="Add Contact" HorizontalAlignment="Left" Margin="320,103,0,0" VerticalAlignment="Top" Width="80" Click="btnAddContact_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="41,191,0,0" Text="Search" TextWrapping="Wrap" VerticalAlignment="Top" Width="38"/>
+        <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left" Margin="321,191,0,0" VerticalAlignment="Top" Width="79" Click="btnSearch_Click"/>
+        <TextBox x:Name="txtOrg" HorizontalAlignment="Left" Margin="81,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
 
     </Grid>
